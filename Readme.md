@@ -21,6 +21,16 @@ npm install
 npm run build
 ```
 
+## Seed the database
+
+Create the test user (the only seed data, hotels come from the fake supplier):
+
+```bash
+php artisan db:seed
+```
+
+Log in with `test@example.com` / `password`.
+
 ## Run the server
 
 Start the development server (Laravel plus the Vite dev server):
