@@ -48,6 +48,7 @@ The supplier sends `POST` with a JSON body to our endpoint. `SUPPLIER_WEBHOOK_UR
 
 - Header `X-Supplier-Signature: sha256=<hex>`, where `<hex>` is HMAC-SHA256 of the raw request body using `SUPPLIER_WEBHOOK_SECRET`.
 - The supplier retries, so the same event can arrive more than once.
+- The receiving endpoint is not part of this repo yet. `POST /api/webhooks/supplier/booking-confirmed` is the URL the supplier is configured to call (and the default the simulator posts to), so this app must serve that path.
 
 ```json
 {

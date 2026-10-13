@@ -50,6 +50,7 @@ The supplier documentation and a sandbox are in `FAKE_SUPPLIER.md`. Please treat
 
 - A booking is identified by the supplier's booking reference.
 - The confirmation message format is described in `FAKE_SUPPLIER.md`.
+- The supplier is already configured to send confirmations to `POST /api/webhooks/supplier/booking-confirmed`, so our application must accept them at exactly that path.
 
 ### Acceptance criteria
 
